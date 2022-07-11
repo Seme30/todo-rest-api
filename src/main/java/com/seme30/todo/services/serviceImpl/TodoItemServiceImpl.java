@@ -13,6 +13,10 @@ public class TodoItemServiceImpl implements TodoItemService{
 
     private TodoItemRepository todoItemRepository;
 
+    public TodoItemServiceImpl(TodoItemRepository todoItemRepository){
+        this.todoItemRepository = todoItemRepository;
+    }
+
     @Override
     public todoItem saveTodo(todoItem todo) {
         return todoItemRepository.save(todo);
