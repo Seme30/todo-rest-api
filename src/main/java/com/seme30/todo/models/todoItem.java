@@ -28,15 +28,9 @@ public class todoItem {
 
     @Getter
     @Setter
-    @Column(name="description")
-    private String todoDescription;
-
-
-    @Getter
-    @Setter
-    @Column(name="type")
-    private String todoType;
-
+    @Column(name="createdDate")
+    private Date todoCreatedDate;
+    
     @Getter
     @Setter
     @Column(name="deadline")
@@ -45,7 +39,7 @@ public class todoItem {
     @Getter
     @Setter
     @Column(name="status")
-    private boolean status;
+    private String status;
 
 
 

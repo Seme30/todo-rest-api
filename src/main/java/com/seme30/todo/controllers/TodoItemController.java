@@ -31,9 +31,12 @@ public class TodoItemController {
     }
 
     //Get All Todos
-    @GetMapping
+    @GetMapping(produces = {"application/json"})
     public List<todoItem> getAllTodos(){
-        return todoItemService.getAllTodos();
+        List<todoItem> todoItems;
+        todoItems = todoItemService.getAllTodos();
+        System.out.println(todoItems);
+        return todoItems;
     }
     
     
