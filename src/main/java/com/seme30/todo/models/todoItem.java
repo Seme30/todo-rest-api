@@ -40,8 +40,5 @@ public class todoItem {
     @Setter
     @Column(name="status")
     private String status;
-
-
-
     
 }
